@@ -6,7 +6,7 @@ public class Window {
     }
 
     public String toString() {
-        return def + "\n";
+        return "||| " + def + "|||\n";
     }
 }
 

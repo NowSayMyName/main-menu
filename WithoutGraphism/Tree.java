@@ -28,7 +28,7 @@ public class Tree {
     }
 
     public String toString() {
-        String str = name + "\n\n";
+        String str = "TITLE: " + name + "\n\n";
         if (trees.size() != 0) {
             for (int i = 0; i < trees.size(); i++) {
                 str += trees.get(i).name + "\n";
