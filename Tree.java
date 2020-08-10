@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Tree {
+public class Tree { 
     private String name;
     private ArrayList<Tree> trees;
     private Window window;
@@ -29,13 +29,11 @@ public class Tree {
 
     public String toString() {
         String str = "TITLE: " + name + "\n\n";
-        if (trees.size() != 0) {
-            for (int i = 0; i < trees.size(); i++) {
-                str += trees.get(i).name + "\n";
+        for (int i = 0; i < trees.size(); i++) {
+            if (window != null && window.getOrder() == i) {
+                str += window;
             }
-        }
-        if (window != null) {
-            str += window;
+            str += trees.get(i).name + "\n";
         }
         str += "-------------------------";
         return str;
